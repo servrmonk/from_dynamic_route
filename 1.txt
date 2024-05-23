@@ -1,0 +1,29 @@
+Dynamic Routes And Advance Models
+Passing Route Params 
+Using query params
+sharpener assignment 7 routing start 
+
+node has not of code already written , if condn for url if req for url do that like that 
+u don't have to write so many line in express js 
+
+ chrome as a browser it only understands html css and js and nothing else 
+all code is converted in to a single js
+
+(SSR)server side rendering:not use in the industry any more 
+jb v koi req aata tha /getproduct => new html css and js vejna padta tha iska downsidemeans downside of ssr is 
+/addproduct : new html css and js vejna padta tha new page vejna padta tha 
+/addtocart : new item cart me fir se new html css all the time 
+the disadvantage is , problem ye hota hai ki every html css we r downloading or sending these many thing every time we are sending the data sometime the data is of 1mb also 2010-2015 me page load hota tha click krne pr new page aata hai html css js ka  that use to happen becaus of ssr sending every time new html css and js , ur page is going to load for each and every thing  and the page is going to reload every time , it gives laggy experience hr chij k lie reload ho rraa h
+
+CSR
+
+so now coming to modern way : angular js ,react js , all are client side rendering in client side rendering ek baar me sara html css jo process hoga we take it in one shot this are design pattern 
+we are going to skip server side rendering 
+our html css and js it gets completely downloaded 
+/getproduct => data or json data after any click on end point we get json data 
+/addproduct => json response 
+
+ab humara page reload nai ho raa hai this is the differnce. all the data and the endpoint i will get in the json format , ab page fast chalega . means hm sb html css and js ko ek file bana kr vej denge first time when it loads , our page and second time se sb cached ho jaega
+u can check by network -> slow 3g and than u can see
+diff is first intial load is little bit larger or big time than ssr and after that things will take smartly
+first load is heavy but it will get cached for next time 
