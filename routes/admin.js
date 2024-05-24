@@ -16,5 +16,11 @@ router.get('/products', adminController.getProducts);
 router.post('/add-product', adminController.postAddProduct);
 
 router.get('/edit-product/:productId',adminController.getEditProduct)
+// post route for updating the product
+router.post('/edit-product',adminController.postEditProduct);
+
+router.post('/delete-product')//post request 
+
+router.post('/delete-product',adminController.postDeleteProduct)
 
 module.exports = router;
