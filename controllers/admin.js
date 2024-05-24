@@ -13,6 +13,7 @@ exports.postAddProduct = (req, res, next) => {
   const price = req.body.price;
   const description = req.body.description;
   const product = new Product(null, title, imageUrl, description, price); //null for product constructor
+  console.log("Product in postAddProduct is ",product);
   product.save();
   res.redirect("/");
 };
